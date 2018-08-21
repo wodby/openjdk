@@ -24,3 +24,4 @@ Supported tags and respective `Dockerfile` links:
 
 * `8.171.11-jdk`, `8.171-jdk`, `8-jdk`, `8.171.11`, `8.171`, `8`, `jdk`, `latest` [_(Dockerfile 8-jdk)_]
 * `8.171.11-jre`, `8.171-jre`, `8-jre`, `jre` [_(Dockerfile 8-jre)_]
+
