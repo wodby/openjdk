@@ -5,7 +5,7 @@ env:
   global:
     - BASE_IMAGE_STABILITY_TAG=2.1.1
     - ALPINE_VER=3.8
-    - OPENJDK8=8.181.13
+    - OPENJDK8=8.191.12
   matrix:
     - OPENJDK_VER="${OPENJDK8}" TYPE=jdk TAGS="${OPENJDK_VER}-jdk,${OPENJDK_VER%.*}-jdk,8-jdk,${OPENJDK_VER},${OPENJDK_VER%.*},8,jdk,latest"
     - OPENJDK_VER="${OPENJDK8}" TYPE=jre TAGS="${OPENJDK_VER}-jre,${OPENJDK_VER%.*}-jre,8-jre,jre"

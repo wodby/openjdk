@@ -22,5 +22,5 @@ This repository is a fork of https://github.com/docker-library/openjdk with a fe
 
 Supported tags and respective `Dockerfile` links:
 
-* `8.181.13-jdk`, `8.181-jdk`, `8-jdk`, `8.181.13`, `8.181`, `8`, `jdk`, `latest` [_(Dockerfile 8-jdk)_]
-* `8.181.13-jre`, `8.181-jre`, `8-jre`, `jre` [_(Dockerfile 8-jre)_]
+* `8.191.12-jdk`, `8.191-jdk`, `8-jdk`, `8.191.12`, `8.191`, `8`, `jdk`, `latest` [_(Dockerfile 8-jdk)_]
+* `8.191.12-jre`, `8.191-jre`, `8-jre`, `jre` [_(Dockerfile 8-jre)_]
