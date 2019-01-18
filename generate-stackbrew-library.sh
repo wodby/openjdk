@@ -46,7 +46,7 @@ getArches() {
 
 	eval "declare -g -A parentRepoToArches=( $(
 		find -name 'Dockerfile' -exec awk '
-				toupper($1) == "FROM" && $2 !~ /^('"$repo"'|scratch|microsoft\/[^:]+)(:|$)/ {
+				toupper($1) == "FROM" && $2 !~ /^('"$repo"'|scratch|mcr[.]microsoft[.]com[/][^:]+)(:|$)/ {
 					print "'"$officialImagesUrl"'" $2
 				}
 			' '{}' + \
@@ -131,8 +131,8 @@ for javaVersion in "${versions[@]}"; do
 	for javaType in jdk jre; do
 		for v in \
 			oracle '' slim alpine \
-			windows/windowsservercore-{ltsc2016,1709,1803} \
-			windows/nanoserver-{sac2016,1709,1803} \
+			windows/windowsservercore-{ltsc2016,1709,1803,1809} \
+			windows/nanoserver-{sac2016,1709,1803,1809} \
 		; do
 			dir="$javaVersion/$javaType${v:+/$v}"
 			[ -n "$v" ] && variant="$(basename "$v")" || variant=
@@ -173,7 +173,7 @@ for javaVersion in "${versions[@]}"; do
 			fromTag="$(git show "$commit":"$dir/Dockerfile" | awk -v variant="$variant" '
 				$1 == "FROM" {
 					switch ($2) {
-						case /^microsoft\//:
+						case /^mcr.microsoft.com\//:
 							$2 = ""
 							break
 						case /^(alpine|oraclelinux):/:
