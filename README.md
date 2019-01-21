@@ -17,10 +17,10 @@ This repository is a fork of https://github.com/docker-library/openjdk with a fe
 * [Travis CI builds](https://travis-ci.com/wodby/openjdk) 
 * [Docker Hub](https://hub.docker.com/r/wodby/openjdk)
 
-[_(Dockerfile 8-jdk)_]: https://github.com/wodby/openjdk/tree/master/8/jdk/alpine/Dockerfile
-[_(Dockerfile 8-jre)_]: https://github.com/wodby/openjdk/tree/master/8/jre/alpine/Dockerfile
-
 Supported tags and respective `Dockerfile` links:
 
 * `8.191.12-jdk`, `8.191-jdk`, `8-jdk`, `8.191.12`, `8.191`, `8`, `jdk`, `latest` [_(Dockerfile 8-jdk)_]
 * `8.191.12-jre`, `8.191-jre`, `8-jre`, `jre` [_(Dockerfile 8-jre)_]
+
+[_(Dockerfile 8-jdk)_]: https://github.com/wodby/openjdk/tree/master/8/jdk/alpine/Dockerfile.wodby
+[_(Dockerfile 8-jre)_]: https://github.com/wodby/openjdk/tree/master/8/jre/alpine/Dockerfile.wodby
