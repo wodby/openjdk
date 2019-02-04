@@ -3,7 +3,7 @@ services: docker
 
 env:
   global:
-    - BASE_IMAGE_STABILITY_TAG=2.1.2
+    - BASE_IMAGE_STABILITY_TAG=2.2.0
     - ALPINE_VER=3.8
     - OPENJDK8=8.191.12
   matrix:
