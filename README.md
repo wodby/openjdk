@@ -12,7 +12,7 @@ This repository is a fork of https://github.com/docker-library/openjdk with a fe
 
 ## Docker Images
 
-* All images are based on Alpine Linux 3.8
+* All images are based on Alpine Linux 3.9
 * Base image: [wodby/alpine](https://github.com/wodby/alpine)
 * [Travis CI builds](https://travis-ci.com/wodby/openjdk) 
 * [Docker Hub](https://hub.docker.com/r/wodby/openjdk)
